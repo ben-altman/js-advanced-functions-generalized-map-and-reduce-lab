@@ -16,7 +16,7 @@ function reduce(source, workToDo, start) {
         }
     } else {
         total = source[0];
-        for (let i = 0; i < source.length; i++) {
+        for (let i = 1; i < source.length; i++) {
             total = workToDo(source[i], total);
         }
     }
